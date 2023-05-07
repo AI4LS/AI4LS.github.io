@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-11-30
+date: 2023-02-23
 inline: true
 ---
 
-We filed a patent application to USPTO earlier this month for the idea conceived during HPE Internship in Summer 2021!
+Two papers on new underlying logic synthesis operators are accepted at [DAC'23.](https://www.dac.com/Conference/2023-Call-for-Contributions)!
