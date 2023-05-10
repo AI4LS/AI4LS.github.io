@@ -2,7 +2,7 @@
 layout: page
 title: Paper Reading
 permalink: /Paper Reading/
-description: Reading notes on a curated selection of academic papers that we have studied.
+description: Reading notes on a curated selection of academic papers that we have studied. More papers will be added regularly.
 nav: true
 display_categories: [Logic Synthesis]
 horizontal: false
