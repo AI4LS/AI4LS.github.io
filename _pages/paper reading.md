@@ -2,9 +2,9 @@
 layout: page
 title: Paper Reading
 permalink: /Paper Reading/
-description: A selected collection of academic papers we have studied and reading notes are written. and intern projects in reverse chronological order.
+description: Reading notes on a curated selection of academic papers that we have studied.
 nav: true
-display_categories: [research_leadership, research, intern]
+display_categories: [Logic Synthesis]
 horizontal: false
 ---
 
