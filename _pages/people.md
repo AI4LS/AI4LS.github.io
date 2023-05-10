@@ -13,7 +13,7 @@ horizontal: false
   <div class="container">
     <div class="row row-cols-2">
       <p align="center">
-        <img src="./assets/img/people.jpeg" width="75%">
+        <img src="../assets/img/people.jpeg" width="100%">
         <!-- <img src="assets/img/people.jpeg" width="75%"> -->
       </p>
     </div>
