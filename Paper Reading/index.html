@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="" /><meta name="msvalidate.01" content="" />
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AI4LS | Paper Reading</title>
+    <meta name="author" content="AI for Logic Synthesis" />
+    <meta name="description" content="Most recent research works focus on proposing novel circuit representations, logic synthesis operators, synthesis sequence tuning algorithms, and physical aware synthesis to improve PPA or runtime.  Therefore, in the paper reading part, we will cover the above logic synthesis algorithms including those operators like rewrite, fraig, if, &nf, mfs2, and lutpack, which are also open-sourced in ABC, and recently proposed operators include MIG/XMG based operators like window rewriting, DB based operators like MFFW rewriting, and AI driven operators like SLAP. Based on them, heuristic and AI-driven synthesis tuning algorithms are developed to improve PPA or runtime. These algorithms include FlowTune, HIMap, BOiLS and EAC-RNN. With the physical guidance and constraints, logic synthesis can synthesize more physical design friendly netlists and directly optimize estimated timing instead of combinational logic depth. Currently, we only provide several paper reading note examples. More reading notes are coming soon." />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="/assets/img/ai4ls.png"/>
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://ai4ls.github.io/Paper%20Reading/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Paper Reading | AI4LS</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Paper Reading" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Most recent research works focus on proposing novel circuit representations, logic synthesis operators, synthesis sequence tuning algorithms, and physical aware synthesis to improve PPA or runtime. Therefore, in the paper reading part, we will cover the above logic synthesis algorithms including those operators like rewrite, fraig, if, &amp;nf, mfs2, and lutpack, which are also open-sourced in ABC, and recently proposed operators include MIG/XMG based operators like window rewriting, DB based operators like MFFW rewriting, and AI driven operators like SLAP. Based on them, heuristic and AI-driven synthesis tuning algorithms are developed to improve PPA or runtime. These algorithms include FlowTune, HIMap, BOiLS and EAC-RNN. With the physical guidance and constraints, logic synthesis can synthesize more physical design friendly netlists and directly optimize estimated timing instead of combinational logic depth. Currently, we only provide several paper reading note examples. More reading notes are coming soon." />
+<meta property="og:description" content="Most recent research works focus on proposing novel circuit representations, logic synthesis operators, synthesis sequence tuning algorithms, and physical aware synthesis to improve PPA or runtime. Therefore, in the paper reading part, we will cover the above logic synthesis algorithms including those operators like rewrite, fraig, if, &amp;nf, mfs2, and lutpack, which are also open-sourced in ABC, and recently proposed operators include MIG/XMG based operators like window rewriting, DB based operators like MFFW rewriting, and AI driven operators like SLAP. Based on them, heuristic and AI-driven synthesis tuning algorithms are developed to improve PPA or runtime. These algorithms include FlowTune, HIMap, BOiLS and EAC-RNN. With the physical guidance and constraints, logic synthesis can synthesize more physical design friendly netlists and directly optimize estimated timing instead of combinational logic depth. Currently, we only provide several paper reading note examples. More reading notes are coming soon." />
+<link rel="canonical" href="https://ai4ls.github.io/Paper%20Reading/" />
+<meta property="og:url" content="https://ai4ls.github.io/Paper%20Reading/" />
+<meta property="og:site_name" content="AI4LS" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Paper Reading" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Most recent research works focus on proposing novel circuit representations, logic synthesis operators, synthesis sequence tuning algorithms, and physical aware synthesis to improve PPA or runtime. Therefore, in the paper reading part, we will cover the above logic synthesis algorithms including those operators like rewrite, fraig, if, &amp;nf, mfs2, and lutpack, which are also open-sourced in ABC, and recently proposed operators include MIG/XMG based operators like window rewriting, DB based operators like MFFW rewriting, and AI driven operators like SLAP. Based on them, heuristic and AI-driven synthesis tuning algorithms are developed to improve PPA or runtime. These algorithms include FlowTune, HIMap, BOiLS and EAC-RNN. With the physical guidance and constraints, logic synthesis can synthesize more physical design friendly netlists and directly optimize estimated timing instead of combinational logic depth. Currently, we only provide several paper reading note examples. More reading notes are coming soon.","headline":"Paper Reading","url":"https://ai4ls.github.io/Paper%20Reading/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://ai4ls.github.io/">AI4LS</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/Paper%20Reading/">Paper Reading<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/people/">People</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- page.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">Paper Reading</h1>
+            <p class="post-description">Most recent research works focus on proposing novel circuit representations, logic synthesis operators, synthesis sequence tuning algorithms, and physical aware synthesis to improve PPA or runtime.  Therefore, in the paper reading part, we will cover the above logic synthesis algorithms including those operators like rewrite, fraig, if, &amp;nf, mfs2, and lutpack, which are also open-sourced in ABC, and recently proposed operators include MIG/XMG based operators like window rewriting, DB based operators like MFFW rewriting, and AI driven operators like SLAP. Based on them, heuristic and AI-driven synthesis tuning algorithms are developed to improve PPA or runtime. These algorithms include FlowTune, HIMap, BOiLS and EAC-RNN. With the physical guidance and constraints, logic synthesis can synthesize more physical design friendly netlists and directly optimize estimated timing instead of combinational logic depth. Currently, we only provide several paper reading note examples. More reading notes are coming soon.</p>
+          </header>
+
+          <article>
+            <!-- pages/projects.md -->
+<div class="projects">
+  <!-- Display categorized projects -->
+  <h2 class="category">Logic Synthesis Operators</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">DAG-Aware AIG Rewriting A Fresh Look at Combinational Logic Synthesis (DAC 2006)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">Three local scalable and effective logic optimization operators are proposed to optimize AIGs considering logic sharing. In which, algebraic balance minimizes delay without increasing area, while NPN based rewrite and DSD based refactor can improve area with level preserving. They work well in most circuits in an interleaved way as in resyn2/dc2 and are also extended to other technology independent representations such as XAGs and MIGs/XMGs.     
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">FRAIGs A Unifying Representation for Logic Synthesis and Verification (2005)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">Simulation and SAT solving are utilized to globally check and merge two functional equivalent nodes. Therefore, it introduces new global area optimization capability for synthesis and verification, but it requires very high runtime for large-scale graphs even with incremental SAT solving.        
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">Scalable Logic Synthesis Using a Simple Circuit Sctructure (IWLS 2006)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">Introduces a few new logic synthesis operators Rewrite, Refactor, Resubstitution, Redundancy Removal
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">Combinational and Sequential Mapping with Priority Cuts (ICCAD 2007)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">Only top-k priority cuts, which are sorted with pre-defined heuristics are saved and more tricks are proposed to reduce the complexity of technology mappings. Two global (area flow) and local (exact area) area recovery are used to reduce area without level degradation.
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">Boolean Rewriting Strikes Back, Reconvergence-Driven Windowing Meets Resynthesis (ASP-DAC 2021)</h4>
+        <p class="card-text" style="white-space: pre-wrap;"></p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+  <h2 class="category">AI4LS Operators</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">SLAP A Supervised Learning Approach for Priority Cuts Technology Mapping (DAC 2021)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">A novel AI4LS mapping operator is proposed by formulating cut sorting heuristics as a multi-class classification problem. CNNs with node and cut embeddings as input are used to learn to sort and filter cuts in technology mapping with the supervised data from mapped delay and area. 
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+  <h2 class="category">Sequence Tuning</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+    <div class="card hoverable">
+  
+      <div class="card-body">
+        <h4 class="card-title">A Parallelized Iterative Improvement Approach to Area Optimization for LUT-Based Technology Mapping (FPGA 2017)</h4>
+        <p class="card-text" style="white-space: pre-wrap;">Due to the mis-correlation between logic optimization and technology mapping, an iterative and random area minimization flow helps escape from local minimum. The Markov Chain Monte Carlo (MCMC) method is utilized to search and randomly select logic optimization operators with the feedback from immediate technology mapping results. Repeating partitioning and merging after each trial may also introduce some optimization opportunities.
+</p>
+        <div class="row ml-1 mr-1 p-0">
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+</div>
+
+          </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2023 AI for Logic Synthesis. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+Last updated: May 16, 2023.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script>
+  </body>
+</html>
+
